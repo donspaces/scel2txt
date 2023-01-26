@@ -115,7 +115,7 @@ def get_words_from_sogou_cell_dict(fname):
 
 
 def save(records, f):
-    records_translated = list(map(lambda x: "%s\t%s" % (
+    records_translated = list(map(lambda x: "%s\t%s\t1" % (
         x[1], x[0]), records))
     f.write("\n".join(records_translated))
     return records_translated
